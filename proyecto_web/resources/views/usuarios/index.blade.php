@@ -11,36 +11,37 @@
 
     <body style="background: linear-gradient(to bottom right, #99ff99 0%, #9999ff 100%);">
       <div class="container-fluid ">
-        <div class="row vh-100 d-flex align-items-center" >
+        <div class="row mt-5 mt-lg-0 vh-100 d-flex align-items-lg-center" >
           <div class="col-10 col-lg-8 offset-1 offset-lg-2">
             <div class="row bg-light shadow-lg " style="height: 25rem;">
               <!-- Foto -->
               <div class="col-12 col-lg-5 text-center d-flex justify-content-center align-items-center bg-primary">
                 <div class="row">
-                  <div class="col-12 img">
-                    <img src="imagenes/car-937414_1280.png" alt="">
+                  <div class="col-12 img mt-5 my-lg-3 ">
+                    <img src="{{asset('images/car-937414_1280.png')}}" alt="">
                   </div>
-                  <div class="col-12"><h4>SISTEMA DE GESTION DE ARRIENDO DE VEHICULOS</h4></div>
+                  <div class="col-12 mb-4 mt-2 my-lg-0"><h4>SISTEMA DE GESTION DE ARRIENDO DE VEHICULOS</h4></div>
                 </div>
               </div>
               <!-- fin Foto -->
                <!-- login -->
               <div class="col-12 col-lg-7 bg-secondary">
-                <div class="card mt-5 mb-2 pt-2">
+                <div class="card mt-3 mt-lg-4 mb-2 pt-2">
                   <div class="card-header">
                     <h4>Inicio de Sesion</h4>
                   </div>
                   <div class="card-body">
-                    <form action="" method="">
+                    <form action="{{}}" method="POST">
+                      @csrf
                       <div class="">
                         <label for="email">Correo electronico : </label>
                         <input type="text" id="email" name="email" class="form-control mt-3">
                       </div>
-                      <div class="mt-4">
+                      <div class="mt-3">
                         <label for="password" >Contraseña : </label>
                         <input type="password" id="password" name="password" class="form-control mt-3">
                       </div>
-                      <div class="d-grid gap-2 d-lg-flex justify-content-lg-end">
+                      <div class="d-grid gap-2 d-lg-flex justify-content-lg-end mt-3">
                         <button type="submit" class="btn btn-success text-white mt-3">Iniciar sesion</button>
                       </div>
 
