@@ -9,4 +9,5 @@ use App\Http\Controllers\UsuariosController;
 // });
 
 // Route::resource('/', HomeController::class);
-Route::get('/usuarios', [UsuariosController::class, 'index']) ->name('usuarios.index');
+Route::get('/usuarios/login', [UsuariosController::class, 'login']) ->name('usuarios.login');
+Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');

@@ -3,15 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuario;
+use App\Models\Perfil;
 
 class UsuariosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+    public function login()
+    {
+        return view('usuarios.login');
+    }
+
     public function index()
     {
-        return view('usuarios.index');
+        $usuarios = Usuario::all();
+        $perfiles = Perfil::all();
+
+        return view('usuarios.index', compact(['usuarios', 'perfiles']));
     }
 
     /**

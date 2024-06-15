@@ -1,0 +1,39 @@
+
+body{
+    background: url('../images/fondito.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+
+.box-area{
+    width: 1400px;
+}
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+
+/* Para pantallas chicas o telefonos */
+@media only screen and (max-width: 768px){
+
+    .box-area{
+        margin: 0 10px;
+    }
+
+    .left-box{
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box{
+        padding: 20px;
+    }
+}
